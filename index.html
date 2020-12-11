@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login" id="login">
+        <div class="login__logo">
+            <img src="https://bot.to/wp-content/uploads/2020/09/modern-warfare_5f722d110e552.png">
+        </div>
+
+        <div class="login__input">
+            <input type="text" id="name" placeholder="Name...">
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar__header">
+            <img src="https://www.freepngimg.com/thumb/youtube/76561-badge-verified-youtube-logo-free-frame.png" width="50">
+            <div class="sidebarHeader__username">
+                <p id="username"></p>
+            </div>
+            <div class="sidebarHeader__userChanger" id="addRoom">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+
+        <div class="sidebar__info">
+            <div class="sidebarInfo__roomName">
+                <div class="sidebarInfo__icon">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <span>#</span>
+                <p>Room Name</p>
+            </div>
+        </div>
+
+        <div class="sidebar__user">
+            <img src="https://logo-logos.com/wp-content/uploads/2018/03/discord_icon_logo_remix.png" width="90" id="user_logo" />
+            <div class="sidebarUser__username">
+                <p id="sidebarUser"></p>
+                <span id="iduser"></span>
+            </div>
+            <div class="sidebarUser__desc">
+                <p>Beep Hoop, boop beep?</p>
+            </div>
+        </div>
+
+        <div class="sidebar__tools">
+            <div class="sidebarTools__microphone">
+                <i class="fas fa-microphone"></i>
+                <div class="sidebarTools__text">
+                    <p>Mute</p>
+                </div>
+            </div>
+            <div class="sidebarTools__volume">
+                <i class="fas fa-volume-down"></i>
+                <div class="sidebarTools__text">
+                    <p>Deafen</p>
+                </div>
+            </div>
+            <div class="sidebarTools__settings">
+                <i class="fas fa-cog"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="content">
+        <div class="content__search">
+            <div class="contentSearch__roomName">
+                <span>#</span>
+                <p>ROOM NAME</p>
+            </div>
+
+            <div class="contentSearch__introText">
+                <p>Ask Everything that is or sounds weird.</p>
+            </div>
+
+            <div class="contentSearch__icons">
+                <i class="fas fa-user-friends"></i>
+                <i class="fas fa-check"></i>
+                <i class="fas fa-bell"></i>
+            </div>
+
+            <div class="contentSearch__search">
+                <input type="text" placeholder="Search..." class="search__input">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+
+        <div class="content__message" id="contentMessage">
+            <!-- Messages -->    
+        </div>
+
+        <div class="content__send">
+           <div class="contentSend__add">
+                <i class="fas fa-plus" id="plus-icon"></i>
+           </div>
+           <div class="contentSend__inputContent">
+                <input type="text" id="sendInput">
+                <i class="fas fa-grin-alt" id="smilesBtn"></i>
+           </div>
+           <div class="contentSend__imageSend">
+                <i class="fas fa-image"></i>
+           </div>
+           <div class="contentSend__gift">
+                <i class="fas fa-gift"></i>
+           </div> 
+        </div>
+
+        <div class="smiles-container" id="smilesContainer">
+            <span id="smiles">😃</span>
+            <span id="smiles">😄</span>
+            <span id="smiles">👾</span>
+            <span id="smiles">👽</span>
+            <span id="smiles">😈</span>
+            <span id="smiles">😉</span>
+            <span id="smiles">😂</span>
+            <span id="smiles">😁</span>
+        </div>
+    </div>
+    <script src="http://173.212.238.103:1239/socket.io/socket.io.js"></script>
+    <script src="js/socket.js"></script>
+    <script src="js/smiles.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/login.js"></script>
+    <script src="https://kit.fontawesome.com/5b335a90ae.js" crossorigin="anonymous"></script>
+</body>
+</html>
