@@ -14,7 +14,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 50%;
     margin: 0 auto;
 }
@@ -22,12 +21,13 @@ body {
 .login__input {
     background: #53486d;
     border-radius: 999px;
+    width: 370px;
 }
 
 .login__input > input {
     border: 0;
     padding: 10px;
-    width: 370px;
+    width: 100%;
     background: transparent;
     outline: 0;
     color: white;
@@ -70,7 +70,7 @@ body {
 .sidebar__info {
     margin-top: 20px;
     padding: 5px;
-    height: 54vh;
+    height: 50vh;
     overflow: auto;
 }
 
@@ -193,7 +193,7 @@ body {
 }
 
 .content__message > .contentMessage__div > i {
-    font-size: 70px;
+    font-size: 35px;
     color: white;
 }
 

@@ -1,8 +1,10 @@
-socket.on("messages", (data) =>{
+socket.on("messages", (data) => {
+    console.log(data)
     for(let i = 0; i < data.length; i++) {
-        createMessage(`${data[i].name} : ${data[i].message}`)
+        createMessage(`${data[i].name} : ${data[i].message}`, socket.id)
     }
 })
+
 
 sendInput.onkeypress = (e) => {
     if(e.key === "Enter") {
@@ -27,7 +29,7 @@ function createMessage(message) {
     
     parDiv.style.marginLeft = "20px"
     parDiv.style.background = "tomato"
-    parDiv.style.padding = "20px"
+    parDiv.style.padding = "16px"
     parDiv.style.borderRadius = "999px"
 
     const par = document.createElement('p')

@@ -9,6 +9,6 @@ smilesBtn.addEventListener('click', () => {
 
 for(let i = 0; i < smiles.length; i++) {
     smiles[i].onclick = () => {
-        sendInput.value = smiles[i].textContent
+        sendInput.value += smiles[i].textContent
     }
 }
