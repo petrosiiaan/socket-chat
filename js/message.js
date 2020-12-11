@@ -1,7 +1,7 @@
 socket.on("messages", (data) => {
     console.log(data)
     for(let i = 0; i < data.length; i++) {
-        createMessage(`${data[i].name} : ${data[i].message}`, socket.id)
+        createMessage(`${data[i].name} : ${data[i].message}`)
     }
 })
 

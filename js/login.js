@@ -1,6 +1,5 @@
 const name = document.querySelector('#name')
 const username = document.querySelector('#username')
-const login = document.querySelector("#login")
 
 socket.on('online', (data) => {
     console.log(`${name.value} is online`,data)
